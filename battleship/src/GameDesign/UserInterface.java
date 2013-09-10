@@ -93,8 +93,8 @@ public class UserInterface extends JFrame {
 
         public ContentPane() {
             try {
-                String pathToImage = "/Users/Firefly/battleShip/battleship/src/GameDesign/BS.jpg";
-                image = ImageIO.read(new File(pathToImage));
+            	URL pathToImage = this.getClass().getResource("/images/BS.jpg");
+                image = ImageIO.read(pathToImage);
             } catch (IOException e) {
                 e.printStackTrace();
             }
