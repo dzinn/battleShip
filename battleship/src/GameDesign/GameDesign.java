@@ -13,7 +13,7 @@ public class GameDesign {
 		DefaultOpponent AI = new DefaultOpponent();
 		
 		AI.setShips();
-
+		System.out.println("lalalaa");
 		UI.start();
 		
 	}
