@@ -12,8 +12,7 @@ public class GameDesign {
 		UserInterface UI = new UserInterface();
 		DefaultOpponent AI = new DefaultOpponent();
 		AI.setShips();
-		System.out.println("fkbefksf");
-		AI.play();
+		
 	
 		UI.start();
 
