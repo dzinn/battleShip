@@ -10,6 +10,11 @@ package GameDesign;
 public class GameDesign {
 	public static void main(String args[]) {
 		UserInterface UI = new UserInterface();
+		DefaultOpponent AI = new DefaultOpponent();
+		
+		AI.setShips();
+
 		UI.start();
+		
 	}
 }
