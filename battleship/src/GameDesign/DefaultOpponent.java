@@ -5,6 +5,7 @@ public class DefaultOpponent {
 		
 	}
 	
+	//Called by GameDesign after setShips
 	public void play() {
 		
 	}
