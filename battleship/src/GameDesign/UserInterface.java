@@ -8,18 +8,11 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
-public class UserInterface extends JFrame {
-
-    public UserInterface() {
-        
-       setTitle("BattleShip!");
-       setSize(900, 600);
-       setLocationRelativeTo(null);
-       setDefaultCloseOperation(EXIT_ON_CLOSE);        
-    }
+public class UserInterface extends JFrame { 
     
-    UserInterface UI = new UserInterface();
+    JFrame UI = new JFrame();
     
    	public void homeScreen(){
   
@@ -41,6 +34,11 @@ public class UserInterface extends JFrame {
         btnpanel.add(optionbtn);
         JButton quitbtn = new JButton("Quit ...");
         btnpanel.add(quitbtn);
+        quitbtn.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e){
+        		System.exit(0);
+        	}
+        });
         
         container.add(panel);
         container.add(btnpanel);
@@ -77,6 +75,10 @@ public class UserInterface extends JFrame {
 }
 
 	public void start() {
+	       UI.setTitle("BattleShip!");
+	       UI.setSize(900, 600);
+	       UI.setLocationRelativeTo(null);
+	       UI.setDefaultCloseOperation(EXIT_ON_CLOSE);
         
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -91,7 +93,7 @@ public class UserInterface extends JFrame {
 
         public ContentPane() {
             try {
-                String pathToImage = "/Users/Firefly/Desktop/BS.jpg";
+                String pathToImage = "/Users/Firefly/battleShip/battleship/src/GameDesign/BS.jpg";
                 image = ImageIO.read(new File(pathToImage));
             } catch (IOException e) {
                 e.printStackTrace();
