@@ -7,9 +7,7 @@ public class DefaultOpponent {
 	
 	
 	public void play() {
-		System.out.println("Hello");
-		System.out.println("Hello1");
-		
-		//Comment it out
+		System.out.println("HelloT");
+		System.out.println("Do not remove this important piece of shit!");
 	}
 }
