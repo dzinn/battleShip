@@ -7,6 +7,6 @@ public class DefaultOpponent {
 	
 	
 	public void play() {
-		System.out.println("Playing!");
+		
 	}
 }
