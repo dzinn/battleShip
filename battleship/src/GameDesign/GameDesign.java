@@ -14,6 +14,8 @@ public class GameDesign {
 		AI.setShips();
 		
 	
+		AI.play();
+		
 		UI.start();
 
 	}
