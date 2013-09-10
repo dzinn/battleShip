@@ -13,6 +13,7 @@ public class GameDesign {
 		DefaultOpponent AI = new DefaultOpponent();
 		
 		AI.setShips();
+		//please work
 		UI.start();
 		
 	}
