@@ -11,8 +11,10 @@ public class GameDesign {
 	public static void main(String args[]) {
 		UserInterface UI = new UserInterface();
 		DefaultOpponent AI = new DefaultOpponent();
-		AI.play();
 		AI.setShips();
+		System.out.println("fkbefksf");
+		AI.play();
+	
 		UI.start();
 
 	}
