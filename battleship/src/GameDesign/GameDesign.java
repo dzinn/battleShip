@@ -11,10 +11,8 @@ public class GameDesign {
 	public static void main(String args[]) {
 		UserInterface UI = new UserInterface();
 		DefaultOpponent AI = new DefaultOpponent();
-		AI.setShips();
 		
-	
-		System.out.println("Adding shit here");
+		AI.setShips();
 		AI.play();
 		
 		UI.start();

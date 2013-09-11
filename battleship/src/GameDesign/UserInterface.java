@@ -29,7 +29,7 @@ public class UserInterface extends JFrame {
         		gameScreen();
         	}
         });
-        //JButton
+
         JButton optionbtn = new JButton("Options");
         btnpanel.add(optionbtn);
         JButton quitbtn = new JButton("Quit ...");
