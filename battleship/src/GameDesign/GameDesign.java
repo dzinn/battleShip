@@ -14,6 +14,7 @@ public class GameDesign {
 		AI.setShips();
 		
 	
+		System.out.println("Adding shit here");
 		AI.play();
 		
 		UI.start();
