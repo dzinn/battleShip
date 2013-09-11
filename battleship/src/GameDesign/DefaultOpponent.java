@@ -8,6 +8,6 @@ public class DefaultOpponent {
 	
 	public void play() {
 		System.out.println("HelloT");
-		System.out.println("Do not remove this important piece of shit!");
+		System.out.println("Do not remove this important piece of CRAP!");
 	}
 }
